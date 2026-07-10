@@ -5,11 +5,11 @@ class Coffee:
         self.size = size
         self.price = price
 
-    
+    @property
     def size(self):
         return self._size
 
-   
+    @size.setter
     def size(self, size):
         if size in ["Small", "Medium", "Large"]:
             self._size = size
